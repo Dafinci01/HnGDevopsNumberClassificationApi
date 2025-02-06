@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("HnGDevopsNumberClassificationApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5cec9180fdc44977ecb77e7a8b5c1419c4a9f7cd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a90d9094f31560c4076a1c9338efd908f1d8ac78")]
 [assembly: System.Reflection.AssemblyProductAttribute("HnGDevopsNumberClassificationApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("HnGDevopsNumberClassificationApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

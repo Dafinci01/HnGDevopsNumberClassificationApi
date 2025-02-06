@@ -32,3 +32,4 @@
 /root/HnGDevopsNumberClassificationApi/obj/Debug/net8.0/HnGDevopsNumberClassificationApi.pdb
 /root/HnGDevopsNumberClassificationApi/obj/Debug/net8.0/HnGDevopsNumberClassificationApi.genruntimeconfig.cache
 /root/HnGDevopsNumberClassificationApi/obj/Debug/net8.0/ref/HnGDevopsNumberClassificationApi.dll
+/root/HnGDevopsNumberClassificationApi/bin/Debug/net8.0/railway.json
