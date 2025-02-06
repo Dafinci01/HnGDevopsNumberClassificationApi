@@ -1,7 +1,7 @@
 # Use the official ASP.NET Core runtime as a base image
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 WORKDIR /app
-EXPOSE 80
+EXPOSE 5000
 
 # Use the SDK image to build the app
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
@@ -26,6 +26,12 @@ RUN dotnet publish "HnGDevopsNumberClassificationApi.csproj" -c Release -o /app/
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
+
+# Set the environment variables:
+# Bind the app to all interfaces on port 5000
 ENV ASPNETCORE_URLS=http://0.0.0.0:5000
+# Set the environment to Production so that development-only features like Swagger are disabled
+ENV ASPNETCORE_ENVIRONMENT=Production
+
 ENTRYPOINT ["dotnet", "HnGDevopsNumberClassificationApi.dll"]
 
