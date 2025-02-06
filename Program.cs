@@ -1,4 +1,6 @@
-using Microsoft.OpenApi.Models;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,32 +19,16 @@ builder.Services.AddCors(options =>
     });
 });
 
-// Add Swagger services
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen(c =>
-{
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
-});
-
 var app = builder.Build();
-
-// Enable Swagger and Swagger UI in Development mode
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI(c =>
-    {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
-        c.RoutePrefix = string.Empty; // Swagger UI at root (http://localhost:<port>/)
-    });
-}
 
 // Apply middleware in correct order
 app.UseCors("AllowAll");   // Apply CORS before routing
 app.UseRouting();          // Enable routing
 app.UseAuthorization();    // Apply Authorization
 
-app.MapControllers();      // Map API controllers
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller-Home}/{action-Index}/{id?}");      // Map API controllers
 
 app.Run();
 
