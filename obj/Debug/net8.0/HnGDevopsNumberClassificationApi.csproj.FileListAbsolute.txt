@@ -33,3 +33,4 @@
 /root/HnGDevopsNumberClassificationApi/obj/Debug/net8.0/HnGDevopsNumberClassificationApi.genruntimeconfig.cache
 /root/HnGDevopsNumberClassificationApi/obj/Debug/net8.0/ref/HnGDevopsNumberClassificationApi.dll
 /root/HnGDevopsNumberClassificationApi/bin/Debug/net8.0/railway.json
+/root/HnGDevopsNumberClassificationApi/bin/Debug/net8.0/Newtonsoft.Json.dll

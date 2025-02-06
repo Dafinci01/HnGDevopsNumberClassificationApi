@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace NumberClassificationApi.Controllers
 {
@@ -46,7 +47,19 @@ namespace NumberClassificationApi.Controllers
                 fun_fact = await FetchFunFactAsync(number)
             };
 
-            return Ok(response);
+            // Deserialize the fun_fact string into a JSON object
+            var funFact = JsonConvert.DeserializeObject(response.fun_fact.ToString());
+
+            // Return the response with the deserialized fun_fact
+            return Ok(new
+            {
+                response.number,
+                response.is_prime,
+                response.is_perfect,
+                response.properties,
+                response.digit_sum,
+                fun_fact = funFact
+            });
         }
 
         private bool IsPrime(int n)
