@@ -3,7 +3,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
 var builder = WebApplication.CreateBuilder(args);
-
+builder.WebHost.UseUrls("http://0.0.0.0:8080");
 // Add services to the container.
 builder.Services.AddControllers();
 builder.Services.AddHttpClient(); // Add HttpClient for external API calls
@@ -18,7 +18,7 @@ builder.Services.AddCors(options =>
               .AllowAnyHeader();
     });
 });
-
+ThreadPool.SetMinThreads(200, 200);
 var app = builder.Build();
 
 // Apply middleware in correct order

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ClassifyNumber")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+24acbcfbec75edc1708315585e89bd4ad471227d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c93b156bb6bea0a8dd442af14328cd474a92aa6c")]
 [assembly: System.Reflection.AssemblyProductAttribute("ClassifyNumber")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ClassifyNumber")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
