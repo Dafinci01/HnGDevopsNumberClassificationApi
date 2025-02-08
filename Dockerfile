@@ -10,7 +10,6 @@ WORKDIR /src
 #Copy just the project files and restore dependencies
 COPY ClassifyNumber.csproj .
 COPY Properties/ Properties/
-COPY Controller/ Controller/
 COPY appsettings.Development.json .
 COPY appsettings.json .
 COPY Program.cs .

@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "78gs/TYNDazZBOu7Oz6Uo4R1vHzIa1BDngnIQXQ5Nds=",
-  "Source": "HnGDevopsNumberClassificationApi",
-  "BasePath": "_content/HnGDevopsNumberClassificationApi",
+  "Hash": "YIoVRMPlb4DG0NeS70gMO7KZgd90897v7g3yIKKXVKU=",
+  "Source": "ClassifyNumber",
+  "BasePath": "_content/ClassifyNumber",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

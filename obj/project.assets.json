@@ -531,11 +531,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/root/HnGDevopsNumberClassificationApi/HnGDevopsNumberClassificationApi.csproj",
-      "projectName": "HnGDevopsNumberClassificationApi",
-      "projectPath": "/root/HnGDevopsNumberClassificationApi/HnGDevopsNumberClassificationApi.csproj",
+      "projectUniqueName": "/root/devops-classifyNumber/ClassifyNumber.csproj",
+      "projectName": "ClassifyNumber",
+      "projectPath": "/root/devops-classifyNumber/ClassifyNumber.csproj",
       "packagesPath": "/root/.nuget/packages/",
-      "outputPath": "/root/HnGDevopsNumberClassificationApi/obj/",
+      "outputPath": "/root/devops-classifyNumber/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/root/.nuget/NuGet/NuGet.Config"

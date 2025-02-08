@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yhRxeaBDRSM=",
+  "dgSpecHash": "QPMkHdBTkVI=",
   "success": true,
-  "projectFilePath": "/root/HnGDevopsNumberClassificationApi/HnGDevopsNumberClassificationApi.csproj",
+  "projectFilePath": "/root/devops-classifyNumber/ClassifyNumber.csproj",
   "expectedPackageFiles": [
     "/root/.nuget/packages/microsoft.aspnetcore.openapi/8.0.12/microsoft.aspnetcore.openapi.8.0.12.nupkg.sha512",
     "/root/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
